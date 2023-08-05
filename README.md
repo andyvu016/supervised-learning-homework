@@ -10,7 +10,6 @@ To run the Jupyter notebook and interact with the visualizations, you need to ha
 - Python 3.10 or later
 - Anaconda Distribution
 - Pandas
-- hvPlot
 - scikit-learn
 
 ## Installing
@@ -20,15 +19,14 @@ To run the Jupyter notebook and interact with the visualizations, you need to ha
 
 3. Installing Anaconda includes the Pandas package.
 
-4. To install the hvPlot and scikit-learn packages, run the following command in your terminal.
+4. To install the scikit-learn packages, run the following command in your terminal.
 
 ```
-conda install -c hvplot
 pip install -U scikit-learn
 ```
 
 ## Usage
-You can clone or download this GitHub project and open the `credit_risk_resampling.ipynb` using Jupyter Notebook. The Jupyter Notebook is seperated into sections that cover different aspects of the analysis. Each section contains explanations, code snippets, and interactive visualizations. By executing each cell in the Jupyter Notebook you can then interact with the visualizations.
+You can clone or download this GitHub project and open the `credit_risk_resampling.ipynb` using Jupyter Notebook. The Jupyter Notebook is seperated into sections that cover different aspects of the analysis. Each section contains explanations and code snippets.
 
 # Report
 ## Overview of the Analysis
