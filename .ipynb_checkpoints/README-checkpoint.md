@@ -48,31 +48,23 @@ The last step in the analysis is to use the resampling method called Random Over
 
 ## Results
 
-* **Machine Learning Model 1 (Logistic Regression Model with Original Data):**
-  * Accuracy: 0.9442676901753825
-    * The model was able to make a correct predication approximately 94.4% of the time.
-  * Precision: `0` : 1.00,  `1` : 0.87
-    * For the `0` (healthy loan) label, of all the cases where the logistic regression model predicted the loan status is healthy, all **100%** were actually healthy loans.
-    * For the `1` (high-risk loan) label, of all the cases where the logistic regression model predicted the loan status is high-risk, only **87%** were actually high-risk loans.
-  * Recall: `0` : 1.00,  `1` : 0.89
-    * For the `0` (healthy loan) label, of all the cases where the loan status is actually healthy, the logistic regression model predicted this label correctly for all **100%** of the cases.
-    * For the `1` (high-risk loan) label, of all the cases where the loan status is actually high-risk, the logistic regression model predicted this label correctly for only **89%** of the cases.
+Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-&nbsp;
+* Machine Learning Model 1 (Logistic Regression Model with Original Data):
+  * Description of Model 1 Accuracy, Precision, and Recall scores.
 
-* **Machine Learning Model 2 (Logistic Regression Model with Resampled Data):**
-    * Accuracy: 0.9959744975744975
-    * The model was able to make a correct predication approximately 99.6% of the time.
-  * Precision: `0` : 1.00,  `1` : 0.87
-    * For the `0` (healthy loan) label, of all the cases where the logistic regression model predicted the loan status is healthy, all **100%** were actually healthy loans.
-    * For the `1` (high-risk loan) label, of all the cases where the logistic regression model predicted the loan status is high-risk, only **87%** were actually high-risk loans.
-  * Recall: `0` : 1.00,  `1` : 1.00
-    * For the `0` (healthy loan) label, of all the cases where the loan status is actually healthy, the logistic regression model predicted this label correctly for all **100%** of the cases.
-    * For the `1` (high-risk loan) label, of all the cases where the loan status is actually high-risk, the logistic regression model predicted this label correctly for only **100%** of the cases.
+
+
+* Machine Learning Model 2 (Logistic Regression Model with Resampled Data):
+  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
-Based on the accuracy score of the models, one might say that the second model is better because it is higher than the first, but this is not the correct reasoning. Ultimately, the logistic regression model, fit with oversampled data, is better than the logistic regression model, fit with the original data, because it increased the recall of predicting the `1` (high-risk loan) label. In regards to this case, having a higher score for the recall of the `1` (high-risk loan) label is more important than having a high score for the precision because the the number of false negative predictions for the `1` (high-risk loan) label is reduced. It is better to lose a lending opportunity to a borrower who was predicted to be high-risk, but really isn't, than lending to a borrower who is actually high risk, but not predicted as such by the model.
+Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+* Which one seems to perform best? How do you know it performs best?
+* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+
+If you do not recommend any of the models, please justify your reasoning.
 
 ## Contributor
 Andy Vu
